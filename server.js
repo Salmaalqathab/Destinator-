@@ -10,7 +10,7 @@ var PORT = process.env.PORT || 8080;
 
 
 app.get("*", function (req, res) {
-    fs.readFile('./home.html', function(error, content) {
+    fs.readFile('./index.html', function(error, content) {
         if (error) {
             res.writeHead(500);
             res.end();
