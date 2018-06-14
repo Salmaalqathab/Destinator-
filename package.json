@@ -1,0 +1,26 @@
+{
+  "name": "project02",
+  "version": "1.0.0",
+  "description": "trail finder",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Salmaalqathab/Project02.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Salmaalqathab/Project02/issues"
+  },
+  "homepage": "https://github.com/Salmaalqathab/Project02#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "geocoder": "^0.2.3",
+    "npm": "^6.1.0",
+    "request": "^2.87.0"
+  }
+}
