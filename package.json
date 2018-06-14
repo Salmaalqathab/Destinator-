@@ -20,7 +20,6 @@
   "homepage": "https://github.com/Salmaalqathab/Project02#readme",
   "dependencies": {
     "geocoder": "^0.2.3",
-    "node-fetch": "^2.1.2",
     "whatwg-fetch": "^2.0.4"
   }
 }
