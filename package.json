@@ -1,0 +1,26 @@
+{
+  "name": "Project02",
+  "version": "1.0.0",
+  "description": "Weather API   https://darksky.net/dev/docs   key = de3c778e6a95184d87bbabbe50c28a33   sample url = https://api.darksky.net/forecast/de3c778e6a95184d87bbabbe50c28a33/37.8267,-122.4233",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Salmaalqathab/Project02.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Salmaalqathab/Project02/issues"
+  },
+  "homepage": "https://github.com/Salmaalqathab/Project02#readme",
+  "dependencies": {
+    "geocoder": "^0.2.3",
+    "node-fetch": "^2.1.2",
+    "whatwg-fetch": "^2.0.4"
+  }
+}
