@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+          
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="main.js"></script>
+</head>
+<body>
+    <nav id = "bar">
+        <div class="nav-wrapper">
+          <form>
+            <div class="input-field">
+              <input id="search" type="search" required>
+              <label class="label-icon" for="search"><i id= "dest" class="material-icons">Destinator</i></label>
+              <i class="material-icons">close</i>
+            </div>
+          </form>
+        </div>
+      </nav>
+    
+  
+    <div class="parallax-container" id ="test">
+        <div class="parallax"><img src="./images/766707.jpg"></div>
+      </div>
+
+      <div  id = "box" class="section ">
+        <div  class="row " id="bap">
+          <h3 id= "get">Get on the right trail</h3>
+        </div>
+        <div class="row">
+            <div class="input-field col s6">
+              <input  id="origin" type="text" class="validate">
+              <label id ="lab" class="active" for="origin">Origin</label>
+            </div>
+          </div>
+          <p id="rad">Radius From Origin (miles)</p>
+          <form action="#">
+              <p class="range-field">
+                <input type="range" id="test5" min="0" max="200" />
+              </p>
+            </form>
+            <div class="input-field col s12">
+                <select>
+                  <option id= "hike" value="" disabled selected >Hike Difficulty</option>
+                  <option value="1">Lackadaisical</option>
+                  <option value="2">Easy</option>
+                  <option value="3">Medium</option>
+                  <option value="4">Hard</option>
+                  <option value="5">Exstream</option>
+                </select>
+              </div>
+              <p id="rad">Minimum length of hike</p>
+              <form action="#">
+                  <p class="range-field">
+                    <input type="range" id="test5" min="0" max="50" />
+                  </p>
+                </form>
+            
+        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+            <i class="material-icons right"></i>
+          </button>
+        
+      </div>
+      <div class="parallax-container">
+        <div id= "pic" class="parallax" ><img src="./images/766627.jpg"></div>
+      </div>
+      <!-- <form action="#">
+          <p class="range-field">
+            <p id= "rad">Radius From Origin</p>
+            <input type="range" id="test5" min="0" max="200" />
+          </p>
+        </form>
+      <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+          <i class="material-icons right"></i>
+        </button> -->
+              
+  <!-- <div class="parallax-container">
+    <div class="parallax"><img src="https://images.pexels.com/photos/257360/pexels-photo-257360.jpeg?auto=compress&cs=tinysrgb&h=350g"></div>
+  </div> -->
+  <script>   
+
+  $(document).ready(function(){
+    $('.parallax').parallax();
+  });
+  $(document).ready(function() {
+    $('select').material_select();
+  });
+
+  
+  </script>
+
+  <style>
+  
+  </style>
+</body>
+</html>
