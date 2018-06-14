@@ -2,8 +2,8 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var path = require("path");
 var geocoder = require("geocoder");
-var fetch = require('node-fetch');
 var request = require("request");
+var fs = require("fs");
 
 var app = express();
 var PORT = process.env.PORT || 8080;
