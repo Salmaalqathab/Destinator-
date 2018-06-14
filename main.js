@@ -62,6 +62,29 @@ $(document).ready(function () {
                         var newP2 = $("<p>").text("Trail Type: " + trails[j].type);
                         var newP3 = $("<p>").text("Difficulty: " + trails[j].difficulty);
                         var newP4 = $("<p>").text("Rating: " + trails[j].rating);
+                        var newP5 = $("<p>").text("Votes: " + trails[j].votes);
+                        var newP6 = $("<p>").text("Location: " + trails[j].location);
+                        var newP7 = $("<p>").text("Length: " + trails[j].length);
+                        var newP8 = $("<p>").text("Ascent: " + trails[j].ascent);
+                        var newP9 = $("<p>").text("Descent: " + trails[j].descent);
+                        var newP10 = $("<p>").text("High Altitude: " + trails[j].high);
+                        var newP11 = $("<p>").text("Low Altitude: " + trails[j].low);
+
+                        $(newDiv).append(newH4);
+                        $(newDiv).append(trailImage);
+                        $(newDiv).append(newP);
+                        $(newDiv).append(newP2);
+                        $(newDiv).append(newP3);
+                        $(newDiv).append(newP4);
+                        $(newDiv).append(newP5);
+                        $(newDiv).append(newP6);
+                        $(newDiv).append(newP7);
+                        $(newDiv).append(newP8);
+                        $(newDiv).append(newP9);
+                        $(newDiv).append(newP10);
+                        $(newDiv).append(newP11);
+
+                        $("#trail-dump").append(newDiv);
                     }
 
                 }
