@@ -18,3 +18,10 @@ GET https://ridb.recreation.gov/api/v1/trails/USFS/?latitude=40.29&longitude=-83
 GET https://ridb.recreation.gov/api/v1/trails/USFS/?milesmin=10&milesmax=15
 
 Key = 60C1BD47FD0A41B6A981BED880E36052
+
+Google api
+"https://maps.googleapis.com/maps/api/geocode/jsonaddress=" + place + "&key=AIzaSyAn8ggebI6-nDFuKEasRkbtzdl7zz_trvQ";
+
+
+Hiking Project API
+"https://www.hikingproject.com/data/get-trails?lat=40.0274&lon=-105.2519&maxDistance=10&key=200290229-8c6cd188792cb14d607d03b6ede06a50";
