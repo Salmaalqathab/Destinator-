@@ -3,7 +3,9 @@ var geocoder = require('geocoder');
 $(document).ready(function () {
 
 
-    $("#submit").on("click", function () {
+    $("#submit").on("click", function (event) {
+        event.preventDefault();
+        
         var location = $("#location").val().trim();
         var distance = $("#distance").val().trim();
         var length = $("#length").val().trim();
