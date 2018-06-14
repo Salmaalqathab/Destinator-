@@ -8,9 +8,10 @@ var app = express();
 var PORT = process.env.PORT || 8080;
 
 
+app.use(express.static(__dirname + '/'));
 
 app.get("*", function (req, res) {
-    fs.readFile('./home.html', function(error, content) {
+    fs.readFile('./index.html', function(error, content) {
         if (error) {
             res.writeHead(500);
             res.end();
