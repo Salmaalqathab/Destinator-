@@ -114,36 +114,27 @@
       var marker2 = L.marker([38.895769, -77.02333]).addTo(mymap);
       var marker3 = L.marker([38.895769, -77.02333]).addTo(mymap);
 
-      var circle = L.circle([38.895469, -77.02733], {
-        color: 'red',
-        fillColor: '#f03',
-        fillOpacity: 0.5,
-        radius: 25
-      }).addTo(mymap);
-
-      var circle2 = L.circle([38.895769, -77.02933], {
-        color: 'red',
-        fillColor: '#f03',
-        fillOpacity: 0.5,
-        radius: 25
-      }).addTo(mymap);
+      
 
       var polygon = L.polygon([
         [38.895469, -77.02733],
         [38.895469, -77.02733],
         [38.895469, -77.02733]
       ]).addTo(mymap);
+      var polygon2 = L.polygon([
+        [38.895769, -77.02333],
+        [38.895769, -77.02333],
+        [38.895769, -77.02333]
+      ]).addTo(mymap);
 
       marker.bindPopup("Fogo de Chao").openPopup();
       marker2.bindPopup("Trail Zamunda").openPopup();
-      circle.bindPopup("Fogo de Chao");
-      circle2.bindPopup("Fogo de Chao");
-      polygon.bindPopup("Fogo de Chao");
+      
 
-      var popup = L.popup()
-        .setLatLng([38.895469, -77.02733])
-        .setContent(" 3500 Connecticut Ave NW, Washington, DC 20008")
-        .openOn(mymap);
+      // var popup = L.popup()
+      //   .setLatLng([38.895469, -77.02733])
+      //   .setContent(" 3500 Connecticut Ave NW, Washington, DC 20008")
+      //   .openOn(mymap);
 
       function onMapClick(e) {
         alert("You clicked the map at " + e.latlng);
