@@ -75,7 +75,6 @@ $(document).ready(function () {
                     var trailImage = $("<img>").attr("src", trails[j].image);
                     var newH4 = $("<h4>").text(trails[j].name).attr({"data-lat": trails[j].latitude, "data-long": trails[j].longitude, "class": "highlight"});
                     var newP = $("<p>").text("Summary: " + trails[j].summary);
-                    var newP2 = $("<p>").text("Trail Type: " + trails[j].type);
                     var newP3 = $("<p>").text("Difficulty: " + trails[j].difficulty);
                     var newP4 = $("<p>").text("Rating: " + trails[j].rating);
                     var newP5 = $("<p>").text("Votes: " + trails[j].votes);
@@ -103,15 +102,11 @@ $(document).ready(function () {
                     $("#trail-dump").append(newDiv);
                 }
 
-
-
-
-
             });
         });
 
     });
 
-
+    
 
 });
