@@ -73,7 +73,7 @@ $(document).ready(function () {
                 for (var j = 0; j < trails.length; j++) {
                     var newDiv = $("<div>").attr("class", "newTrail");
                     var trailImage = $("<img>").attr("src", trails[j].image);
-                    var newH4 = $("<h4>").text(trails[j].name);
+                    var newH4 = $("<h4>").text(trails[j].name).attr({"data-lat": trails[j].latitude, "data-long": trails[j].longitude, "class": "highlight"});
                     var newP = $("<p>").text("Summary: " + trails[j].summary);
                     var newP2 = $("<p>").text("Trail Type: " + trails[j].type);
                     var newP3 = $("<p>").text("Difficulty: " + trails[j].difficulty);
