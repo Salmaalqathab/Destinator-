@@ -103,15 +103,11 @@ $(document).ready(function () {
                     $("#trail-dump").append(newDiv);
                 }
 
-
-
-
-
             });
         });
 
     });
 
-
+    
 
 });
