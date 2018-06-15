@@ -11,7 +11,14 @@ $(document).ready(function () {
         var difficulty = $("#difficulty").val().trim();
 
 
-        var queryURL1 = "https://maps.googleapis.com/maps/api/geocode/json?address=" + origin + "&key=AIzaSyAn8ggebI6-nDFuKEasRkbtzdl7zz_trvQ";
+        origin.split(" ");
+        var originConcat = "";
+        
+        for (var i = 0; i < origin.length; i++) {
+            originConcat += origin[i]
+        }
+
+        var queryURL1 = "https://maps.googleapis.com/maps/api/geocode/json?address=" + originConcat + "&key=AIzaSyAn8ggebI6-nDFuKEasRkbtzdl7zz_trvQ";
 
         $.ajax({
             url: queryURL1,
@@ -23,7 +30,7 @@ $(document).ready(function () {
             var latitude = response.results[0].geometry.location.lat;
             var longitude = response.results[0].geometry.location.lng;
 
-            var queryURL2 = "https://www.hikingproject.com/data/get-trails?lat=" + latitude + "&lon=" + longitude + "&maxDistance=" + radius + "&key=200290229-8c6cd188792cb14d607d03b6ede06a50";
+            var queryURL2 = "https://www.hikingproject.com/data/get-trails?lat=" + latitude + "&lon=" + longitude + "&maxDistance=" + radius + "&minLength=" + length + "&maxResults=30&key=200290229-8c6cd188792cb14d607d03b6ede06a50";
 
             $.ajax({
                 url: queryURL2,
