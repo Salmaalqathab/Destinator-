@@ -88,7 +88,6 @@ $(document).ready(function () {
                     $(newDiv).append(newH4);
                     $(newDiv).append(trailImage);
                     $(newDiv).append(newP);
-                    $(newDiv).append(newP2);
                     $(newDiv).append(newP3);
                     $(newDiv).append(newP4);
                     $(newDiv).append(newP5);
