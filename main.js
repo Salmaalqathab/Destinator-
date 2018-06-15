@@ -11,12 +11,18 @@ $(document).ready(function () {
         var difficulty = $("#difficulty").val().trim();
 
 
-        origin.split(" ");
+        var originArr = origin.split(" ");
         var originConcat = "";
-        
-        for (var i = 0; i < origin.length; i++) {
-            originConcat += origin[i]
+
+        for (var i = 0; i < originArr.length; i++) {
+            if (i === 0) {
+                originConcat += originArr[i];
+            } else {
+                originConcat += "+" + originArr[i]
+            }
         }
+
+        console.log(originConcat);
 
         var queryURL1 = "https://maps.googleapis.com/maps/api/geocode/json?address=" + originConcat + "&key=AIzaSyAn8ggebI6-nDFuKEasRkbtzdl7zz_trvQ";
 
