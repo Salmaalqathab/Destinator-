@@ -114,7 +114,6 @@ $(document).ready(function () {
                     var popup = L.popup({ className: 'popup' })
                         .setContent('<div class="popupDiv">' +
                             '<h6>' + trails[i].name + '</h6>' +
-                            '<img src="' + trails[i].imageThumb + '">' +
                             '<p><b>' + 'Rating: ' + trails[i].rating + ' / 5 stars'+ '</b><br>' +
                             '<b>' + 'Length: ' + trails[i].length + ' miles' + '</b><br>' +
                             'Difficulty: ' + trails[i].difficulty +
@@ -141,7 +140,7 @@ $(document).ready(function () {
                 //         .setContent("You clicked the map at " + e.latlng.toString())
                 //         .openOn(mymap);
                 // }
-                
+
                 // mymap.on('click', onMapClick);
             });
         });
