@@ -1,3 +1,7 @@
+#reset {
+  display: none;
+}
+
 #bigbox { width: 50%;
     margin-left: 25%;
 
@@ -17,10 +21,10 @@
    /* background-color: deepskyblue; */
    /* padding: 300px; */
    margin: 0 auto !important;
-   
+
 }
 #test{ height: 400px;
-    
+
 }
 #dest{
     font-size: 50px;
@@ -30,7 +34,7 @@
 #get{
     font-style: italic;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+
 }
 
 #bar{
@@ -76,10 +80,18 @@
 }
 
 #trail-dump {
-    height: 500px;
+    height: 400px;
     overflow: auto;
 }
 
 .newTrail {
     border-bottom: 2px solid black;
+}
+
+#weather {
+  display: none;
+  text-align: center;
+  background-color: #26a69a;
+  border-radius: 20px;
+  color: white;
 }

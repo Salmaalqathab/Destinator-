@@ -144,7 +144,8 @@ $(document).ready(function () {
                 // mymap.on('click', onMapClick);
             });
         });
-
+      $("#weather").toggle();
+      $("#reset").toggle();
     });
 
     $(document).on('mouseenter', '.highlight', function() {
@@ -158,5 +159,31 @@ $(document).ready(function () {
     $(document).on('click', '.highlight', function() {
         mymap.panTo([$(this).data("lat"), $(this).data("long")]);
         mymap.fitBounds(L.latLngBounds([[$(this).data("lat") - .025, $(this).data("long") - .025], [$(this).data("lat") + .025, $(this).data("long") + .025]]));
+
+        var queryURL3 = "https://api.darksky.net/forecast/de3c778e6a95184d87bbabbe50c28a33/" + $(this).data("lat") + "," + $(this).data("long");
+
+        console.log(queryURL3);
+
+        $.ajax({
+            // headers: {"Access-Control-Allow-Origin:": "http://localhost:8080/#results"},
+            crossDomain: true,
+            dataType: 'jsonp',
+            url: queryURL3,
+            method: "GET"
+
+        }).then(function (response) {
+
+
+          $("#current").text("Current Conditions");
+          // $("#icon").append(response.currently.icon);
+          $("#summary").text("Summary Condition: " + (response.currently.summary));
+          $("#temp").text("Temperature: " + response.currently.temperature);
+          $("#humidity").text("Humidity: " + response.currently.humidity);
+          $("#wind").text("Windspeed: " + response.currently.windSpeed);
+
+          console.log(response.currently);
+        });
+
+
     });
 });
