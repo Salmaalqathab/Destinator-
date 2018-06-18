@@ -19,7 +19,12 @@
   },
   "homepage": "https://github.com/Salmaalqathab/Project02#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "fs": "0.0.1-security",
     "geocoder": "^0.2.3",
+    "path": "^0.12.7",
+    "request": "^2.87.0",
     "whatwg-fetch": "^2.0.4"
   }
 }
