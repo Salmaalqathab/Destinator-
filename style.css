@@ -39,6 +39,8 @@
 
 #bar{
     background-color: tan;
+    height: 100px;
+    padding-left: 10px;
 }
 #rad{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
