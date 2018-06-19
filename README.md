@@ -16,9 +16,6 @@
 1. Ian Banson.
 1. Salma Al-Qathab.
 
-# Tabe of content<h4>
-1. Project Description.
-1. What we used.
-1. Team members.
+
 
 
