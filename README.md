@@ -9,7 +9,7 @@
 1. geo-coder.
 1. hiking project API.
 
-![hikelogo](https://user-images.githubusercontent.com/34350992/41576566-18f0ea4e-7356-11e8-94cc-9abfa9216577.png)
+![destination_2-wallpaper-1152x720](https://user-images.githubusercontent.com/34350992/41607561-495ad038-73b4-11e8-9e15-f1630136bc75.jpg)
 # Team members<h3>
 1. Marcus Salazar.
 1. Sameer Kanakia.
